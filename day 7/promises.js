@@ -82,7 +82,7 @@
 // function step2(){
 //     return new Promise((res,rej)=>{
 //         setTimeout(()=>{
-//             console.log("filtr")
+//             console.log("fil")
 //             res()
 //         },4000)
 //     })
