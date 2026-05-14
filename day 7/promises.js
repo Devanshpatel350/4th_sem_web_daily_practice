@@ -93,7 +93,7 @@
 // }
 // call()
 //Api
- let h2=  document.querySelector("h2")
+//  let h2=  document.querySelector("h2")
 fetch("https://jsonplaceholder.typicode.com/todos").
 then((data)=>{
     return data.json()
