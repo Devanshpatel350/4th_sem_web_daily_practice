@@ -99,10 +99,10 @@ then((data)=>{
     return data.json()
 }).then((val)=>{
     console.log(val);
-    h2.innerText=val[9].title
-}).catch((err)=>{
-    console.log(err);
-})
+//     h2.innerText=val[9].title
+// }).catch((err)=>{
+//     console.log(err);
+// })
 // step1().then(()=>{
 //     return step2().then(()=>{
 //     })
