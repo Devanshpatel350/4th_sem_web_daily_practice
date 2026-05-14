@@ -106,7 +106,3 @@
 //     return step2().then(()=>{
 //     })
 // })
-
-
-git commit -m "Updated Day 7 practice"
-git push origin main
