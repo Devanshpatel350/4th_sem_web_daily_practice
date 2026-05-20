@@ -1,4 +1,4 @@
-<!-- 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -198,9 +198,9 @@
 
     <button id="nextBtn" onclick="nextQuestion()" disabled>Next Question</button>
   </div>
-
-//on latter -->
-  <!-- <div id="resultScreen" class="result hide">
+<!-- 
+//on latter --> 
+   <div id="resultScreen" class="result hide">
     <h2>🎉 Quiz Complete!</h2>
     <div class="final-score" id="finalScore">0 / 5</div>
     <p id="resultMsg"></p>
@@ -210,39 +210,149 @@
 
 <script>
 
-  const questions = [
-    {
-      question: "HTML ka full form kya hai?",
-      options: [
-        "Hyper Text Markup Language",
-        "High Text Machine Language",
-        "Hyper Tabular Markup Language",
-        "Home Tool Markup Language"
-      ],
-      answer: 0   
-    },
-    {
-      question: "CSS me color change karne ke liye kaunsi property use hoti hai?",
-      options: ["font-color", "text-color", "color", "background"],
-      answer: 2
-    },
-    {
-      question: "JavaScript me variable declare karne ke liye kaunsa keyword use hota hai?",
-      options: ["var", "int", "string", "declare"],
-      answer: 0
-    },
-    {
-      question: "Kaunsa HTML tag sabse bada heading banata hai?",
-      options: ["<h6>", "<heading>", "<h1>", "<head>"],
-      answer: 2
-    },
-    {
-      question: "JavaScript me array ki length kaise pata karte hain?",
-      options: ["array.size()", "array.length", "array.count", "length(array)"],
-      answer: 1
-    }
-  ];
+  // const questions = [
+  //   {
+  //     question: "HTML ka full form kya hai?",
+  //     options: [
+  //       "Hyper Text Markup Language",
+  //       "High Text Machine Language",
+  //       "Hyper Tabular Markup Language",
+  //       "Home Tool Markup Language"
+  //     ],
+  //     answer: 0   
+  //   },
+  //   {
+  //     question: "CSS me color change karne ke liye kaunsi property use hoti hai?",
+  //     options: ["font-color", "text-color", "color", "background"],
+  //     answer: 2
+  //   },
+  //   {
+  //     question: "JavaScript me variable declare karne ke liye kaunsa keyword use hota hai?",
+  //     options: ["var", "int", "string", "declare"],
+  //     answer: 0
+  //   },
+  //   {
+  //     question: "Kaunsa HTML tag sabse bada heading banata hai?",
+  //     options: ["<h6>", "<heading>", "<h1>", "<head>"],
+  //     answer: 2
+  //   },
+  //   {
+  //     question: "JavaScript me array ki length kaise pata karte hain?",
+  //     options: ["array.size()", "array.length", "array.count", "length(array)"],
+  //     answer: 1
+  //   }
+  // ];
+const questions = [
+  {
+    question: "HTML ka full form kya hai?",
+    options: [
+      "Hyper Text Markup Language",
+      "High Text Machine Language",
+      "Hyper Tabular Markup Language",
+      "Home Tool Markup Language"
+    ],
+    answer: 0
+  },
 
+  {
+    question: "CSS me styling apply karne ke liye kaunsi file use hoti hai?",
+    options: [
+      ".js",
+      ".java",
+      ".css",
+      ".html"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "CSS me text ka color change karne ke liye kaunsi property use hoti hai?",
+    options: [
+      "font-color",
+      "text-color",
+      "color",
+      "background-color"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "JavaScript me variable declare karne ke liye kaunsa keyword use hota hai?",
+    options: [
+      "var",
+      "string",
+      "integer",
+      "declare"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "Kaunsa HTML tag sabse bada heading show karta hai?",
+    options: [
+      "<h6>",
+      "<head>",
+      "<h1>",
+      "<heading>"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "JavaScript file ka extension kya hota hai?",
+    options: [
+      ".java",
+      ".js",
+      ".json",
+      ".jsx"
+    ],
+    answer: 1
+  },
+
+  {
+    question: "DOM ka full form kya hai?",
+    options: [
+      "Document Object Model",
+      "Data Object Method",
+      "Digital Ordinance Model",
+      "Desktop Object Management"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "HTML me line break ke liye kaunsa tag use hota hai?",
+    options: [
+      "<break>",
+      "<lb>",
+      "<br>",
+      "<hr>"
+    ],
+    answer: 2
+  },
+
+  {
+    question: "JavaScript me output console me dikhane ke liye kya use hota hai?",
+    options: [
+      "console.log()",
+      "print()",
+      "document.write()",
+      "alert.console()"
+    ],
+    answer: 0
+  },
+
+  {
+    question: "CSS me background color change karne ke liye kaunsi property use hoti hai?",
+    options: [
+      "bgcolor",
+      "background-color",
+      "color",
+      "background-image"
+    ],
+    answer: 1
+  }
+];
 
   let currentQuestion = 0;
   let score = 0;
@@ -294,7 +404,7 @@
 
 
   function startTimer() {
-    clearInterval(timerInterval);
+   // clearInterval(timerInterval);
     timerInterval = setInterval(() => {
       timeLeft--;
       document.getElementById('timer').textContent = timeLeft;
@@ -382,5 +492,4 @@
 </script>
 
 </body>
-</html> --> 
-//
+</html> 

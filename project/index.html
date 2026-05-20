@@ -1,0 +1,139 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+border-radius: 30pxc;
+}
+    button:hover{
+        background-color: #962222;
+    }
+
+    </style>
+</head>
+<body>
+
+
+     <script >
+        // button=document.querySelector("button");
+// button.addEventListener("click",()=>{
+//     console.log("Button Clicked");
+// })
+fetch("https://dummyjson.com/products").then((response) => {
+    return response.json();
+}).then((data) => {
+    let body = document.querySelector("body");
+    // console.log(data.products[3].brand);
+    data.products.map((a) => {
+        console.log(a.thumbnail);
+        body.innerHTML +=` 
+        <div style="
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        width: 300px;
+        border-radius: 21px;
+        ">
+        <img src="${a.thumbnail}" width="100px"/>
+        <h2>${a.title}</h2>
+        <h2>${a.brand}</h2>
+        <h3>${a.price}</h3>
+        <button onclick="addToCart(${a.id})">Add to Cart</button>
+        <button>Buy Now</button>
+        </div>  ` ;
+    })
+    window.allP=data.products
+})
+
+
+     </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="addToCart.html">   
+     <button>addToCart</button> </a>
+    <!-- <script  src="index.js"></script> -->
+<script>
+
+
+
+fetch("https://dummyjson.com/products").
+then((res)=>{
+    return res.json()
+}).then((data)=>{
+   let body=   document.querySelector("body")
+    // console.log(data.products[1].brand);
+    data.products.map((a)=>{
+        console.log(a);
+        body.innerHTML+=`<div style="border:1px solid black;
+           padding:20px;
+           margin:20px;
+           width:300px;
+           border-radius:21px"> 
+           <img src="${a.
+            thumbnail}" width="100px">
+            <h2>  ${a.title}</h2>
+            <h2>  ${a.brand}</h2>
+            <h1>  ${a.price}</h2>
+               
+            <button onclick="addToCart(${a.id})">add </button>
+            </div>
+     `
+    })
+    window.allP=data.products
+})
+console.log(window);
+function addToCart(id){
+
+    // console.log(id);
+ let data=    window.allP.find((a)=>{
+        return a.id==id
+
+
+    })
+    console.log(data);
+    localStorage.setItem("item",JSON.stringify(data))
+    
+
+    
+}
+</script>
+<!-- <button>addToCart</button> -->
+</body>
+<!-- <button>addToCart</button> -->
+</html> -->
