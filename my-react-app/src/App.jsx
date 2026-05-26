@@ -192,24 +192,24 @@
 //import React from 'react'
 //import { useState } from 'react'
 
-import { useState } from 'react';
-import Home from './assets/Home';
+// import { useState } from 'react';
+// import Home from './assets/Home';
 
-const App = () => {
+// const App = () => {
 
-  let user = "devansh";
-let [count,setCount]=    useState(0)
-    function fun1(){
-        SetCount{count+1}
-    }
-  return (
-    <div>
-        <h4>{count}</h4>
-        <button onClick={fun1}>click</button>
-        <Home/>
-      <Home data={user} />
-    </div>
-  );
-};
+//   let user = "devansh";
+// let [count,setCount]=    useState(0)
+//     function fun1(){
+//         SetCount{count+1}
+//     }
+//   return (
+//     <div>
+//         <h4>{count}</h4>
+//         <button onClick={fun1}>click</button>
+//         <Home/>
+//       <Home data={user} />
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
