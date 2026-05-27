@@ -2,7 +2,7 @@
 // import Home from './assets/Home';
 
 // const App = () => {
-//     let user="devansh"
+//     let user="dev"
 //   return (
 //     <div><Home data={user} />
 //     </div>
@@ -29,7 +29,7 @@
 // }
 // const New = () => {
 //     return (
-//       <div>newww fileeeee</div>
+//       <div>new file</div>
 //     )
 //   }
 //   export {New}
