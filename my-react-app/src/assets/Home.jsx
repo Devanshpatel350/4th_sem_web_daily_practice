@@ -38,12 +38,12 @@
 
 //import React from 'react'
 
-const Home = () => {
-    console.log("hello");
+// const Home = () => {
+//     console.log("hello");
     
-  return (
-    <div></div>
-  )
-}
+//   return (
+//     <div></div>
+//   )
+// }
 
-export default Home
+// export default Home
