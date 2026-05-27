@@ -197,7 +197,7 @@
 
 // const App = () => {
 
-//   let user = "devansh";
+//   let user = "dev";
 // let [count,setCount]=    useState(0)
 //     function fun1(){
 //         SetCount{count+1}
@@ -261,7 +261,7 @@
 // }
 // const Home = () => {
 //   return (
-//     <div>Helllooo</div>
+//     <div>Hello</div>
 //   )
 // }
 
@@ -304,7 +304,7 @@
 //  // App->Home->A->B->C
 
 // const App = () => {
-//   let user="ankittt"
+//   let user="ank"
 //   return (
 //     <div><Home  data={user}/></div>
 //   )
