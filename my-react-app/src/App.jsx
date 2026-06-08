@@ -753,7 +753,7 @@
 // // // //  // App->Home->A->B->C
 
 // // // // const App = () => {
-// // // //   let user="ankittt"
+// // // //   let user="ank"
 // // // //   return (
 // // // //     <div><Home  data={user}/></div>
 // // // //   )
